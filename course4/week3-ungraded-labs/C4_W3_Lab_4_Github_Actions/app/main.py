@@ -22,4 +22,5 @@ def predict(wine: Wine):
     batches = wine.batches
     np_batches = np.array(batches)
     pred = clf.predict(np_batches).tolist()
+    print("Neo updated this line")
     return {"Prediction": pred}
